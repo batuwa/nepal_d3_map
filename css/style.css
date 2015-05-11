@@ -1,19 +1,66 @@
-rect {
-  fill: none;
-  pointer-events: all;
-  stroke: #000;
-  stroke-width: 3px;
-  z-index: -1;
+body {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        margin: 0 auto;
+        tab-size: 2;
+        width: 960px;
 }
 
-.nepal_districts {
-  fill: #3d71b6;
+h1 {
+        font-size: 54px;
+        font-weight: 300;
+        letter-spacing: -2px;
+        margin: .3em 0 .1em 0;
+        text-rendering: optimizeLegibility;
+}
+
+
+rect {
+        fill: none;
+        pointer-events: all;
+        stroke: #ddd;
+        stroke-width: 2px;
+        z-index: -1;
+}
+
+#tooltip {
+        position: absolute;
+        width: 180px;
+        height: auto;
+        padding: 10px;
+        background-color: white;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+}
+
+#tooltip.hidden {
+        display: none;
+}
+
+#tooltip p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 19px;
+}
+
+#tooltip p #heading {
+        font-size: 18px;
+        padding-bottom: 20px;
+        text-transform: capitalize;
 }
 
 .district-boundary {
-  fill: none;
-  stroke: #FFF;
-  stroke-width: 2;
-  stroke-linejoin: round;
+        fill: none;
+        stroke: #FFFFFF;
+        stroke-width: 1;
+        stroke-linejoin: round;
+        stroke-linecap: round;  
 }
 
+.districts {
+        fill: none;   // change this to none by default later
+}

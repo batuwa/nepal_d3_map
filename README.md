@@ -11,4 +11,4 @@ Usage:
 - clone the repo
 - open up a terminal / command line and cd in the folder
 - run a basic web server, e.g. pythom -m SimpleHTTPServer 8000
-- go to the localhost and port of the server, e.g localhost:8000 in your browser.
+- go to the localhost and port of the server in your browser, e.g localhost:8000
